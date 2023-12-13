@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Absolute Positionierung - Beispiel</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <style>
+    .container {
+      border: 10px solid red;
+      padding: 10px;
+      height: 180px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 70px;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+      /* CSS styles go here */
+      .example {
+        display: none;
+        /* other styles */
+      }
+    }
+  </style>
+  <body>
+    <h1>H-Eins Beispiel</h1>
+    <div class="container">
+      <p class="example">test text</p>
+      <p>test text</p>
+    </div>
+  </body>
+</html>

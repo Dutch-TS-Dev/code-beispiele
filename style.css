@@ -1,0 +1,13 @@
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+  margin: 30px auto; /* Center the box */
+  background-color: #f0f0f0; /* Light grey background */
+  text-align: center; /* Center the text */
+  font-family: "Arial", sans-serif; /* Font style */
+  font-size: 16px; /* Font size */
+  color: #333333; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-sizing: border-box;
+}
