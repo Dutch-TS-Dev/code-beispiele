@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Demonstration</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+      }
+
+      .flex-item {
+        background-color: coral;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        width: 50%; /* Or any other specific width */
+        /* Or use max-width for responsive design */
+        max-width: 300px;
+      }
+
+      .flex-item:nth-child(2) {
+        background-color: royalblue;
+      }
+      .flex-item:nth-child(3) {
+        background-color: limegreen;
+      }
+      .flex-item:nth-child(4) {
+        background-color: violet;
+      }
+      .flex-item:nth-child(5) {
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flexbox Configuration Example</h2>
+
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <!-- <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div> -->
+    </div>
+  </body>
+</html>

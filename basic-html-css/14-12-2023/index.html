@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Box Model Demo</title>
+    <style></style>
+  </head>
+  <style>
+    .box1 {
+      height: 30vh;
+      width: 100vw;
+      background: red;
+    }
+    .box2 {
+      height: 100vh;
+      width: 100vw;
+      background: blue;
+    }
+    .box3 {
+      height: 30vh;
+      width: 100vw;
+      background: yellow;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #box1 {
+      color: red;
+    }
+  </style>
+  <body>
+    <div>
+      <a href="#scroll">scroll</a>
+      <div class="box1">Content</div>
+      <!-- <div id="box1">Content</div> -->
+      <div class="box2">Content</div>
+      <div id="scroll" class="box3">Content</div>
+      <!-- <div id="box1">Content</div> -->
+    </div>
+  </body>
+</html>
