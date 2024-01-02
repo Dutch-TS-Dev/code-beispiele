@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiple Choice Questions</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      ol {
+        counter-reset: question;
+        list-style-type: none;
+      }
+
+      ol > li {
+        margin-bottom: 20px;
+        counter-increment: question;
+      }
+
+      ol > li:before {
+        content: counter(question) ". ";
+        font-weight: bold;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul > li {
+        background: #f4f4f4;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        border-left: 3px solid #007bff;
+      }
+
+      ul > li:hover {
+        background: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>
+        Wie positioniert man ein Element relativ zu einem anderen in CSS?
+        <ul>
+          <li>A. position: relative</li>
+          <li>B. position: absolute</li>
+          <li>C. display: block</li>
+          <li>D. margin</li>
+        </ul>
+      </li>
+      <li>
+        Welches CSS-Attribut wird verwendet, um ein Element absolut zu
+        positionieren?
+        <ul>
+          <li>A. margin</li>
+          <li>B. padding</li>
+          <li>C. position: relative</li>
+          <li>D. position: absolute</li>
+        </ul>
+      </li>
+      <li>
+        Welche CSS-Eigenschaft steuert die spezifische Platzierung von Elementen
+        im Raum?
+        <ul>
+          <li>A. display</li>
+          <li>B. position: absolute</li>
+          <li>C. padding</li>
+          <li>D. border</li>
+        </ul>
+      </li>
+      <li>
+        Was bedeutet `box-sizing: border-box` in CSS?
+        <ul>
+          <li>A. Setzt den Innenabstand eines Elements</li>
+          <li>B. Verändert die Position eines Elements</li>
+          <li>C. Steuert die Berechnung der Gesamtgröße einer Box</li>
+          <li>D. Ändert die Hintergrundfarbe einer Box</li>
+        </ul>
+      </li>
+      <li>
+        Wie fügt man ein Hintergrundbild in CSS ein?
+        <ul>
+          <li>A. background-color: blue</li>
+          <li>B. background-size: cover</li>
+          <li>C. background-image: url('bild.jpg')</li>
+          <li>D. background-repeat: no-repeat</li>
+        </ul>
+      </li>
+      <li>
+        Wie wird eine CSS-Klasse im Stylesheet definiert?
+        <ul>
+          <li>A. .meineKlasse</li>
+          <li>B. #meinId</li>
+          <li>C. &lt;class&gt;</li>
+          <li>D. class="meineKlasse"</li>
+        </ul>
+      </li>
+      <li>
+        Welches Symbol wird verwendet, um eine ID in CSS zu definieren?
+        <ul>
+          <li>A. .</li>
+          <li>B. #</li>
+          <li>C. &gt;</li>
+          <li>D. &lt;</li>
+        </ul>
+      </li>
+      <li>
+        Was beschreibt Flexbox in CSS?
+        <ul>
+          <li>A. Ein Modell zur Positionierung von Bildern</li>
+          <li>B. Eine Methode zur Farbanpassung</li>
+          <li>
+            C. Ein Layoutmodell für die Anordnung von Elementen in einer
+            eindimensionalen Fläche
+          </li>
+          <li>D. Ein Tool zur Textformatierung</li>
+        </ul>
+      </li>
+      <li>
+        Welches CSS-Attribut wird verwendet, um einen Flex Container zu
+        definieren?
+        <ul>
+          <li>A. margin: flex</li>
+          <li>B. display: flex</li>
+          <li>C. flex-direction: row</li>
+          <li>D. align-items: flex-start</li>
+        </ul>
+      </li>
+      <li>
+        Was macht das HTML-Element &lt;br /&gt;?
+        <ul>
+          <li>A. Erzeugt einen Zeilenumbruch</li>
+          <li>B. Fügt ein Bild ein</li>
+          <li>C. Erstellt einen neuen Absatz</li>
+          <li>D. Definiert einen Kopfbereich</li>
+        </ul>
+      </li>
+      <li>
+        Was ist der Zweck des &lt;head&gt; Tags in HTML?
+        <ul>
+          <li>A. Definiert den Kopfbereich einer Webseite</li>
+          <li>B. Beinhaltet den sichtbaren Inhalt der Webseite</li>
+          <li>C. Definiert den Fußbereich einer Webseite</li>
+          <li>D. Fügt interaktive Elemente zur Webseite hinzu</li>
+        </ul>
+      </li>
+      <li>
+        Wofür steht das &lt;header&gt; Tag in HTML?
+        <ul>
+          <li>A. Für den Hauptinhalt der Webseite</li>
+          <li>B. Für die Einführung oder den Kopfbereich einer Webseite</li>
+          <li>C. Für die Einbindung von JavaScript-Dateien</li>
+          <li>D. Für die Navigation innerhalb der Webseite</li>
+        </ul>
+      </li>
+      <li>
+        Was bedeutet das Zeichen &gt; in CSS?
+        <ul>
+          <li>A. Selektiert jedes Element, das ein direktes Kind ist</li>
+          <li>B. Selektiert Elemente, die Geschwister sind</li>
+          <li>C. Verbindet zwei Klassen</li>
+          <li>D. Setzt einen Kommentar</li>
+        </ul>
+      </li>
+      <!-- Previous questions go here -->
+      <li>
+        Was bedeutet das erste Zeichen 'd' in Linux-Berechtigungen?
+        <ul>
+          <li>A. Dokument</li>
+          <li>B. Datei</li>
+          <li>C. Ordner/Directory</li>
+          <li>D. Download</li>
+        </ul>
+      </li>
+      <li>
+        Welches Zeichen repräsentiert eine Datei im Linux-Berechtigungssatz?
+        <ul>
+          <li>A. d</li>
+          <li>B. -</li>
+          <li>C. x</li>
+          <li>D. r</li>
+        </ul>
+      </li>
+      <li>
+        Wie ist der Berechtigungssatz 'rwxr-xr-x' in Linux strukturiert?
+        <ul>
+          <li>
+            A. 9 Zeichen, alle Berechtigungen für Benutzer, Gruppe und andere
+          </li>
+          <li>
+            B. 3 Gruppen zu je 3 Zeichen, für Eigentümer, Gruppe und andere
+          </li>
+          <li>C. 4 Gruppen zu je 2 Zeichen, verschiedene Berechtigungstypen</li>
+          <li>D. 2 Gruppen, eine für Dateityp, eine für Berechtigungen</li>
+        </ul>
+      </li>
+      <li>
+        Wofür steht der Befehl 'sudo' in Linux?
+        <ul>
+          <li>A. Zum Wechseln des Benutzers</li>
+          <li>B. Für erhöhte Berechtigungen</li>
+          <li>C. Zum Verschieben von Dateien</li>
+          <li>D. Zum Löschen von Dateien</li>
+        </ul>
+      </li>
+      <li>
+        Wer ist der Superuser in Linux?
+        <ul>
+          <li>A. admin</li>
+          <li>B. user</li>
+          <li>C. root</li>
+          <li>D. sudo</li>
+        </ul>
+      </li>
+      <li>
+        Wofür werden Wildcards in Linux verwendet?
+        <ul>
+          <li>A. Zum Ausführen von Skripten</li>
+          <li>B. Für effiziente Dateiverwaltung</li>
+          <li>C. Zum Verwalten von Benutzerkonten</li>
+          <li>D. Für Netzwerkkonfigurationen</li>
+        </ul>
+      </li>
+      <li>
+        Was macht der Befehl 'mv' in Linux?
+        <ul>
+          <li>A. Kopiert Dateien</li>
+          <li>B. Löscht Dateien</li>
+          <li>C. Bewegt oder benennt Dateien um</li>
+          <li>D. Zeigt Dateiinhalte an</li>
+        </ul>
+      </li>
+      <li>
+        Wofür wird der Befehl 'cp' in Linux verwendet?
+        <ul>
+          <li>A. Zum Ändern von Dateiberechtigungen</li>
+          <li>B. Zum Kopieren von Dateien</li>
+          <li>C. Zum Erstellen von Verzeichnissen</li>
+          <li>D. Zum Anzeigen von Dateiinformationen</li>
+        </ul>
+      </li>
+      <li>
+        Was bedeutet 'rm -rf' in Linux?
+        <ul>
+          <li>A. Dateien umbenennen</li>
+          <li>B. Dateien lesen</li>
+          <li>C. Dateien rekursiv und ohne Bestätigung löschen</li>
+          <li>D. Dateiberechtigungen ändern</li>
+        </ul>
+      </li>
+      <li>
+        Was bewirkt die JavaScript-Funktion 'alert'?
+        <ul>
+          <li>A. Öffnet eine neue Webseite</li>
+          <li>B. Zeigt eine Warnung an</li>
+          <li>C. Sendet eine E-Mail</li>
+          <li>D. Speichert Daten in einer Datenbank</li>
+        </ul>
+      </li>
+      <li>
+        Wofür wird das HTML-Tag '&lt;link&gt;' verwendet?
+        <ul>
+          <li>A. Zum Einbetten von Bildern</li>
+          <li>B. Zum Einbinden externer Ressourcen wie CSS-Dateien</li>
+          <li>C. Zum Erstellen von Hyperlinks</li>
+          <li>D. Zum Anzeigen von Videos</li>
+        </ul>
+      </li>
+      <li>
+        Wie wird CSS in HTML eingebunden?
+        <ul>
+          <li>A. Mit dem &lt;style&gt;-Tag im Body-Bereich</li>
+          <li>B. Mit JavaScript-Funktionen</li>
+          <li>C. Mit dem &lt;link&gt;-Tag im Head-Bereich</li>
+          <li>D. Direkt in HTML-Tags</li>
+        </ul>
+      </li>
+      <li>
+        Was bewirkt 'display: block;' in CSS?
+        <ul>
+          <li>A. Macht ein Element unsichtbar</li>
+          <li>
+            B. Stellt das Element als Block dar, der die volle Breite einnimmt
+          </li>
+          <li>C. Platziert das Element in einer Zeile</li>
+          <li>D. Versteckt das Element im Dokument</li>
+        </ul>
+      </li>
+      <li>
+        Welches HTML-Attribut beschreibt den Pfad zu einer externen Datei?
+        <ul>
+          <li>A. class</li>
+          <li>B. id</li>
+          <li>C. src</li>
+          <li>D. href</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
