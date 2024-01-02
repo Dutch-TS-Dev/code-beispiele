@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox with Wrap</title>
+    <style>
+      .flex-container {
+        display: flex;
+        gap: 10px;
+      }
+
+      .flex-item {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        border: 2px solid black;
+      }
+
+      /* Individuelle Hintergrundfarben für jedes Element */
+      .flex-item:nth-child(1) {
+        background-color: lightcoral;
+      }
+      .flex-item:nth-child(2) {
+        background-color: lightblue;
+      }
+      .flex-item:nth-child(3) {
+        background-color: lightgreen;
+      }
+      .flex-item:nth-child(4) {
+        background-color: lightpink;
+      }
+      .flex-item:nth-child(5) {
+        background-color: lightgoldenrodyellow;
+      }
+      .flex-item:nth-child(6) {
+        background-color: lightgray;
+      }
+      .flex-item:nth-child(7) {
+        background-color: lightsalmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">Lorem ipsum dolor sit amet</div>
+      <div class="flex-item">Consectetur adipiscing elit</div>
+      <div class="flex-item">Sed do eiusmod tempor</div>
+      <div class="flex-item">Incididunt ut labore et</div>
+      <div class="flex-item">Dolore magna aliqua</div>
+      <div class="flex-item">Ut enim ad minim veniam</div>
+      <div class="flex-item">Quis nostrud exercitation</div>
+    </div>
+  </body>
+</html>
