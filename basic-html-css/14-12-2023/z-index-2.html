@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        position: fixed; /* Fixiert den Header */
+        width: 100%; /* Ganze Breite der Seite */
+        top: 0; /* Oben auf der Seite */
+      }
+
+      .sticky-nachricht {
+        position: fixed;
+        border: 1px solid red;
+        background: red;
+        top: 0;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+      }
+
+      main {
+        margin-top: 60px; /* Platz für den fixierten Header */
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+
+      footer {
+        background-color: #ddd;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- Navigationslinks -->
+      <div class="sticky-nachricht">Testtt</div>
+    </nav>
+
+    <main>
+      <div class="text">Lorem ipsum</div>
+      <div class="text">Lorem ipsum</div>
+      <div class="text">Lorem ipsum</div>
+    </main>
+    <footer>
+      <!-- Fußbereich der Webseite -->
+    </footer>
+  </body>
+</html>

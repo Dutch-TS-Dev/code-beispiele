@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Gradient Button - Example</title>
+    <style>
+      .button {
+        background-image: linear-gradient(to right, #4caf50, #81c784);
+        border: none;
+        border-radius: 25px; /* Rounded corners */
+        color: white;
+        padding: 15px 32px; /* Larger size */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition: transform 2s linear; /* Slower transition for the gradient */
+        cursor: pointer;
+      }
+
+      .button:hover {
+        transform: scale(1.1); /* Slightly larger on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="button">Hover over me!</button>
+
+      <div>z-index 1</div>
+      <div>z-index 2</div>
+    </div>
+  </body>
+</html>
