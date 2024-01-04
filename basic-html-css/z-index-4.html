@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Überlappungsbeispiel</title>
+    <style>
+      .elternteil {
+        position: relative;
+        background-color: lightblue;
+        z-index: 1; /* z-index des Elternteils */
+        padding: 20px;
+      }
+
+      .kind {
+        position: absolute; /* Positioniere das Kind absolut */
+        background-color: lightgreen;
+        padding: 20px;
+        bottom: -40px; /* Positioniere das Kind, um das Geschwisterteil zu überlappen */
+        right: 20px;
+        z-index: 2; /* Höherer z-index als der des Elternteils und des Geschwisterteils */
+      }
+
+      .geschwisterteil {
+        position: relative;
+        background-color: lightyellow;
+        padding: 20px;
+        z-index: 1; /* Gleicher z-index wie der des Elternteils */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="elternteil">
+      Elternteil
+      <div class="kind">Kind</div>
+    </div>
+    <div class="geschwisterteil">Geschwisterteil des Elternteils</div>
+  </body>
+</html>

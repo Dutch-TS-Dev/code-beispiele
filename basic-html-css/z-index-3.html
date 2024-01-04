@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Z-Index Hierarchy Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .parent {
+        position: relative;
+        background-color: lightblue;
+        padding: 20px;
+        z-index: 1; /* lower z-index */
+      }
+
+      .child {
+        position: relative;
+        background-color: lightgreen;
+        padding: 20px;
+        margin-top: 20px;
+        z-index: 2; /* higher z-index than parent */
+      }
+
+      .grandchild {
+        position: relative;
+        background-color: lightcoral;
+        padding: 20px;
+        margin-top: 20px;
+        z-index: 3; /* highest z-index but within child */
+      }
+
+      .sibling {
+        position: relative;
+        background-color: lightyellow;
+        padding: 20px;
+        margin-top: -60px; /* Overlaps with the parent and child */
+        z-index: 1; /* Same z-index as parent, but it's a sibling */
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Z-Index Hierarchy Example</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+      </head>
+      <body>
+        <div class="parent">
+          Parent
+          <div class="child">
+            Child
+            <div class="grandchild">Grandchild</div>
+          </div>
+        </div>
+        <div class="sibling">Parent's Sibling</div>
+      </body>
+    </html>
+  </body>
+</html>
