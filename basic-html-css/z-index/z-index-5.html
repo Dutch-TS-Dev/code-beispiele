@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+/* standaard hebben latere elementen een hogere z-index */
+      .box {
+        /* position: absolute; */
+        width: 100px;
+        height: 100px;
+      }
+      .red-box {
+        background-color: red;
+
+    
+
+      }
+      .blue-box {
+        background-color: blue;
+        /* left: 150px;
+        top: 150px; */
+
+      }
+      .green-box {
+        background-color: green;
+        /* left: 200px; */
+        /* top: 200px; */
+
+      }
+    </style>
+  </head>
+  <body class="parent">
+    <div>
+    <div class="box red-box"></div>
+    <div class="box blue-box"></div>
+    <div class="box green-box"></div>
+</div>
+  <body class="parent-sibling">
+    <div>
+    <div class="box red-box"></div>
+    <div class="box blue-box"></div>
+    <div class="box green-box"></div>
+</div>
+  </body>
+</html>
