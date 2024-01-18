@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .border-frame {
+        border: 1px solid black;
+      }
+
+      .rounded-corners {
+        border-radius: 50%;
+      }
+
+      .image-size {
+        width: 300px;
+        object-fit: cover;
+      }
+
+      .float-left {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Umgang mit Bildern</h1>
+
+    <h2>Das &lt;img&gt;-Tag einführen</h2>
+    <img src="pfad/zum/bild.jpg" alt="Beschreibungls des Bildes" />
+
+    <h2>Bedeutung des alt-Attributs</h2>
+    <img
+      src="pfad/zum/bild.jpg"
+      alt="Beschreibung des Bildes für Barrierefreiheit und SEO"
+    />
+
+    <h2>Absolute und Relative URLs</h2>
+    <img
+      src="https://www.beispielwebsite.com/bild.jpg"
+      alt="Beschreibung des Bildes"
+    />
+    <img src="/bilder/bild.jpg" alt="Beschreibung des Bildes" />
+
+    <h2>Bildrahmen mit border</h2>
+    <img
+      src="pfad/zum/bild.jpg"
+      alt="Beschreibung des Bildes"
+      class="border-frame"
+    />
+
+    <h2>Eckenkontrolle mit border-radius</h2>
+    <img
+      src="pfad/zum/bild.jpg"
+      alt="Beschreibung des Bildes"
+      class="rounded-corners"
+    />
+
+    <h2>width und object-fit</h2>
+    <img
+      src="pfad/zum/bild.jpg"
+      alt="Beschreibung des Bildes"
+      class="image-size"
+    />
+
+    <h2>Verwendung von float (streng bei Bild und Text)</h2>
+    <img
+      src="pfad/zum/bild.jpg"
+      alt="Beschreibung des Bildes"
+      class="float-left"
+    />
+    <p>Text, der sich neben dem Bild befindet.</p>
+  </body>
+</html>
