@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML File</title>
+    <style>
+      /* :root {
+      } */
+
+      html {
+        /* font-size: 20px; */
+      }
+
+      .container {
+        font-size: 1rem; /* 1.5rem refers to 1.5 times the root element's font size (16px), so it will be 24px */
+      }
+
+      .box {
+        font-size: 0.75rem; /* 0.75rem refers to 0.75 times the root element's font size (16px), so it will be 12px */
+      }
+
+      /* .test-em {
+        font-size: 20px;
+      }
+      .test-em p {
+        font-size: 1em;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      p {
+        text-align: center;
+        display: flex;
+        width: 100%;
+      } */
+
+      /* .flex-center {
+        justify-content: center;
+      } */
+      /* div::before {
+        content: "test-content";
+        border: 1px solid green;
+      } */
+      div::after {
+        content: "test-content";
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my HTML File</h1>
+
+    <div class="container flex-center">
+      <div>
+        <div class="test-em flex">
+          <div>
+            <p>This is a box with decreased font size.</p>
+            <p>This is a second container with increased font size.</p>
+            <p>Container with increased font size.</p>
+            <p>With increased font size.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex">
+        <p>This is a box with decreased font size.</p>
+      </div>
+
+      <ul>
+        <li>Test1</li>
+        <li>Test2</li>
+      </ul>
+
+      <p>Test P</p>
+      <h1>Test h1</h1>
+      <h2>Test h2</h2>
+    </div>
+  </body>
+</html>

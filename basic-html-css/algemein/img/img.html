@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="./style.css" />
+    <link href="./style-2.css" />
     <style>
       .border-frame {
-        border: 1px solid black;
+        border: 1px solid rgb(8, 7, 7);
+      }
+
+      div {
+        width: 100px;
       }
 
       .rounded-corners {
@@ -14,23 +20,70 @@
         width: 300px;
         object-fit: cover;
       }
-
-      .float-left {
-        float: left;
+      /* img {
+        border: 8px dotted green;
+        border-radius: 80px;
       }
+      img {
+        border: 8px dotted red !important;
+        border-radius: 80px;
+      } */
+
+      div {
+        width: 200px;
+        height: 200px;
+        background: blue;
+      }
+
+      .class-name {
+        border: 11px solid red;
+      }
+      #id-name {
+        border: 11px solid green;
+      }
+
+      .background-image {
+        background: url("./katze.jpg");
+        background-size: cover;
+        height: 300px;
+      }
+
+      /* kommentar */
+      /* kommentar */
+      /* kommentar */
+      /* kommentar */
     </style>
   </head>
   <body>
     <h1>Umgang mit Bildern</h1>
 
     <h2>Das &lt;img&gt;-Tag einführen</h2>
-    <img src="pfad/zum/bild.jpg" alt="Beschreibungls des Bildes" />
+    <img
+      style="border: 2px solid blue"
+      src="katze.jpg"
+      alt="Beschreibungls des Bildes"
+    />
+
+    <div
+      class="class-name"
+      id="id-name"
+      style="border: 8px dotted purple"
+    ></div>
+
+    <div class="background-image"></div>
 
     <h2>Bedeutung des alt-Attributs</h2>
     <img
-      src="pfad/zum/bild.jpg"
+      src="katze.jpg"
       alt="Beschreibung des Bildes für Barrierefreiheit und SEO"
     />
+
+    <element aria-label="beschreibung dieses Element"> </element>
+    <div>
+      <div>
+        <div><img /></div>
+      </div>
+    </div>
 
     <h2>Absolute und Relative URLs</h2>
     <img
@@ -40,32 +93,20 @@
     <img src="/bilder/bild.jpg" alt="Beschreibung des Bildes" />
 
     <h2>Bildrahmen mit border</h2>
-    <img
-      src="pfad/zum/bild.jpg"
-      alt="Beschreibung des Bildes"
-      class="border-frame"
-    />
+    <img src="katze.jpg" alt="Beschreibung des Bildes" class="border-frame" />
 
     <h2>Eckenkontrolle mit border-radius</h2>
     <img
-      src="pfad/zum/bild.jpg"
+      src="katze.jpg"
       alt="Beschreibung des Bildes"
       class="rounded-corners"
     />
 
     <h2>width und object-fit</h2>
-    <img
-      src="pfad/zum/bild.jpg"
-      alt="Beschreibung des Bildes"
-      class="image-size"
-    />
+    <img src="katze.jpg" alt="Beschreibung des Bildes" class="image-size" />
 
     <h2>Verwendung von float (streng bei Bild und Text)</h2>
-    <img
-      src="pfad/zum/bild.jpg"
-      alt="Beschreibung des Bildes"
-      class="float-left"
-    />
+    <img src="katze.jpg" alt="Beschreibung des Bildes" class="float-left" />
     <p>Text, der sich neben dem Bild befindet.</p>
   </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Stilvoller Text</title>
+  <style>
+    .bold-text {
+      font-weight: 600; /* Wähle eine Gewichtung zwischen 100 und 900 */
+    }
+    .italic-text {
+      font-style: italic;
+    }
+    .underline-text {
+      text-decoration: underline;
+    }
+    .line-through-text {
+      text-decoration: line-through;
+    }
+    .shadow-text {
+      text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    }
+    .decorated-text:before,
+    .decorated-text:after {
+      content: '❖';
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="bold-text">Das ist ein fetter Text.</p>
+  <p class="italic-text">Das ist ein kursiver Text.</p>
+  <p class="underline-text">Dieser Text ist unterstrichen.</p>
+  <p class="line-through-text">Dieser Text ist durchgestrichen.</p>
+  <h1 class="shadow-text">Text mit Schatten</h1>
+  <p class="decorated-text">Text mit Dekoration</p>
+
+</body>
+</html>
