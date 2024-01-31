@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      input[type="checkbox"]:checked + p {
+        /* outline: 1px solid blue; */
+        display: flex;
+      }
+
+      p {
+        display: none;
+      }
+      input:focus {
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Form Styling Example</h1>
+    <div class="test-fabian"></div>
+    <form>
+      <div class="toggle-switch">
+        <div>
+          <input type="checkbox" />
+          <p>Du hast die checkbox angeklickt</p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

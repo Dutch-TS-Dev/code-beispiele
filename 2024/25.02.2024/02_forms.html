@@ -37,19 +37,19 @@
     <style>
       input:focus,
       textarea:focus {
-        outline: 2px solid blue;
+        /* outline: 2px solid blue; */
       }
 
       input::placeholder {
         color: gray;
-        font-size: 140px;
+        font-size: 15px;
       }
 
       input[type="text"] {
         border: 1px solid black;
       }
 
-      input[type="email"] {
+      input[type="email"]:focus {
         border: 1px solid blue;
       }
 
@@ -67,10 +67,6 @@
         display: inline-block;
         width: 60px;
         height: 34px;
-      }
-
-      .toggle-switch input[type="checkbox"] {
-        display: none;
       }
 
       .slider {
@@ -96,20 +92,43 @@
         transition: transform 0.2s;
       }
 
-      .toggle-switch input[type="checkbox"]:checked + .slider:before {
+      .toggle-switch input[type="checkbox"]:checked {
+        /* transform: translateX(26px); */
+      }
+      /* .toggle-switch input[type="checkbox"]:checked  {
         transform: translateX(26px);
+      } */
+      /* .toggle-switch input[type="checkbox"]:checked + .slider:before {
+        transform: translateX(26px);
+      } */
+
+      .test-fabian {
+        border: 1px solid red;
+        width: 200px;
+      }
+      input::placeholder {
+        color: red;
+        font-size: 14px;
       }
     </style>
   </head>
   <body>
     <h1>HTML Form Styling Example</h1>
-
+    <div class="test-fabian"></div>
     <form>
       <label for="name">Name:</label>
       <input type="text" id="name" placeholder="Enter your name" autofocus />
 
       <label for="email">Email:</label>
+
       <input type="email" id="email" placeholder="Enter your email address" />
+      <input type="checkbox" />
+      <input
+        required
+        type="email"
+        id="email"
+        placeholder="Enter your email address"
+      />
 
       <label for="message">Message:</label>
       <textarea id="message" placeholder="Enter your message"></textarea>
@@ -124,6 +143,14 @@
 
       <input type="submit" value="Submit" />
       <input type="reset" value="Reset" disabled />
+
+      <div class="toggle-switch">
+        <div>
+          <div>
+            <input type="checkbox" />
+          </div>
+        </div>
+      </div>
     </form>
   </body>
 </html>
