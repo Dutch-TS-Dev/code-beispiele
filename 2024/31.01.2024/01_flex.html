@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex-Basis Erklärung</title>
+    <style>
+      /* uebrig: 100px */
+
+      /* element eins: flex grow 3 */
+      /* element 1: flex grow 1 */
+      /* 1+1 = 2 */
+      /* deswegen: 1/2 = 50% von uebrichen Raum */
+
+      /* element eins: flex grow 3 */
+      /* element 1: flex grow 1 */
+      /* 3 + 1 = 4 */
+
+      /* Dies ist ein Container für Flexbox-Elemente */
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* Erlaubt das Umbruch von Elementen */
+        justify-content: space-between; /* Verteilt Platz zwischen den Elementen */
+      }
+
+      /* Hier sind die einzelnen Flexbox-Elemente */
+      .element {
+        width: 100px; /* Anfangsbreite des Elements (ohne Flexbox) */
+
+        /* Die nächste Zeile zeigt, wie 'flex-basis' funktioniert */
+        flex-basis: 200px; /* Bestimmt die anfängliche Größe des Elements */
+        /* In diesem Fall wird das Element auf 200px Breite festgelegt */
+
+        height: 100px;
+        background-color: #3498db;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+      }
+
+      /* Zusätzliche Stile für das Beispiel */
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-Basis Erklärung</h1>
+    <p>
+      Flex-Basis ist eine CSS-Eigenschaft, die die anfängliche Größe eines
+      Flexbox-Elements festlegt.
+    </p>
+    <p>In diesem Beispiel sehen wir, wie 'flex-basis' funktioniert:</p>
+    <div class="container">
+      <!-- Hier beginnen die Flexbox-Elemente -->
+      <div class="element">Element 1</div>
+    </div>
+
+    <div class="container">
+      <!-- Hier beginnen die Flexbox-Elemente -->
+      <!-- <div class="element">Element 2</div> -->
+      <!-- <div class="element">Element 3</div> -->
+    </div>
+  </body>
+</html>

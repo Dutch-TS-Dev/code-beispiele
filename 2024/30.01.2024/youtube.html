@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .video-zeile {
+      /* .video-zeile {
         display: flex;
         border: 1px solid green;
         flex-direction: column;
@@ -20,11 +20,26 @@
         border: 1px dotted blue;
         height: 300px;
         width: 300px;
+      } */
+
+      .video-zeile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px;
+        border: 1px solid green;
+        flex-direction: column;
+      }
+
+      .video-zeile > div {
+        border: 1px dotted blue;
+        /* height: 300px;
+        width: 300px; */
       }
 
       @media screen and (min-width: 500px) {
         .video-zeile {
           flex-direction: row;
+          /* grid-template-columns: 100% 100% 100%; */
         }
       }
     </style>

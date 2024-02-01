@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex-Grow Erklärung</title>
+    <style>
+      /* Dies ist ein Container für Flexbox-Elemente */
+      .container {
+        display: flex;
+        justify-content: space-between; /* Verteilt Platz zwischen den Elementen */
+      }
+
+      /* Hier sind die einzelnen Flexbox-Elemente */
+      .element {
+        width: 100px; /* Anfangsbreite des Elements (ohne Flexbox) */
+        height: 100px;
+        background-color: #3498db;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+
+        /* Die nächste Zeile zeigt, wie 'flex-grow' funktioniert */
+        /* Bestimmt, wie viel zusätzlichen Platz das Element einnehmen kann */
+        /* In diesem Fall teilen sich die Elemente den verfügbaren Platz gleichmäßig */
+      }
+
+      /* Zusätzliche Stile für das Beispiel */
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-Grow Erklärung</h1>
+    <p>
+      Flex-Grow ist eine CSS-Eigenschaft, die bestimmt, wie viel zusätzlichen
+      Platz ein Flexbox-Element einnehmen kann.
+    </p>
+    <p>In diesem Beispiel sehen wir, wie 'flex-grow' funktioniert:</p>
+    <div class="container">
+      <!-- Hier beginnen die Flexbox-Elemente -->
+      <div class="element">Element 1</div>
+      <div class="element">Element 2</div>
+      <div class="element">Element 3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex-Shrink Erklärung</title>
+    <style>
+      /* Dies ist ein Container für Flexbox-Elemente */
+      .container {
+        display: flex;
+        justify-content: space-between; /* Verteilt Platz zwischen den Elementen */
+      }
+
+      /* Hier sind die einzelnen Flexbox-Elemente */
+      .element {
+        width: 250px; /* Anfangsbreite des Elements (ohne Flexbox) */
+        height: 100px;
+        background-color: #3498db;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+
+        /* Die nächste Zeile zeigt, wie 'flex-shrink' funktioniert */
+        flex-shrink: 2; /* Bestimmt, wie stark das Element schrumpfen kann */
+        /* In diesem Fall kann das Element doppelt so stark schrumpfen wie die anderen */
+      }
+
+      /* Zusätzliche Stile für das Beispiel */
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-Shrink Erklärung</h1>
+    <p>
+      Flex-Shrink ist eine CSS-Eigenschaft, die bestimmt, wie stark ein
+      Flexbox-Element schrumpfen kann, wenn der Platz begrenzt ist.
+    </p>
+    <p>In diesem Beispiel sehen wir, wie 'flex-shrink' funktioniert:</p>
+    <div class="container">
+      <!-- Hier beginnen die Flexbox-Elemente -->
+      <div class="element">Element 1</div>
+      <div class="element">Element 2</div>
+      <div class="element">Element 3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid Parent with Named Areas</title>
+    <style>
+      /* Container for the CSS Grid */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 equally-sized columns */
+        gap: 10px; /* Gap between grid items */
+        grid-template-areas:
+          "header header header"
+          "sidebar main main"
+          "footer footer footer";
+      }
+
+      /* Child elements with assigned grid areas */
+      .header {
+        grid-area: header; /* Assigning the grid area name 'header' */
+        background-color: #3498db;
+        padding: 20px;
+        color: white;
+      }
+
+      .sidebar {
+        grid-area: sidebar; /* Assigning the grid area name 'sidebar' */
+        background-color: #e74c3c;
+        padding: 20px;
+        color: white;
+      }
+
+      .main {
+        grid-area: main; /* Assigning the grid area name 'main' */
+        background-color: #2ecc71;
+        padding: 20px;
+        color: white;
+      }
+
+      .footer {
+        grid-area: footer; /* Assigning the grid area name 'footer' */
+        background-color: #f39c12;
+        padding: 20px;
+        color: white;
+      }
+
+      /* Additional styles for the example */
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Parent with Named Areas</h1>
+    <p>
+      In this example, we create a grid parent using CSS Grid and assign named
+      grid areas to children.
+    </p>
+    <div class="grid-container">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="main">Main Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
