@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minmax Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: minmax(100px, 200px) 200px;
+        column-gap: 20px;
+        padding: 20px;
+        /* width: 300px; */
+      }
+
+      .static-column {
+        background-color: lightblue;
+        padding: 20px;
+      }
+
+      .dynamic-column {
+        background-color: lightgreen;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dynamic-column">Dynamic Column with minmax</div>
+      <div class="static-column">Static Column</div>
+    </div>
+  </body>
+</html>

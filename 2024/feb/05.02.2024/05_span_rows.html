@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Row Spanning Example</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-gap: 10px;
+      }
+
+      .item {
+        background-color: lightblue;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .span-item {
+        grid-row: span 2; /* Spanning over 2 rows */
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="span-item">Element 1</div>
+      <div class="item">Element 2</div>
+      <div class="item">Spannt über 2 Zeilen</div>
+      <div class="item">Weitere div</div>
+      <div class="item">Weitere div</div>
+      <div class="item">Weitere div</div>
+      <div class="item">Weitere div</div>
+      <div class="item">Weitere div</div>
+      <div class="item">Weitere div</div>
+    </div>
+  </body>
+</html>

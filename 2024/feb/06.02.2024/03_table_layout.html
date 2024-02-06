@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Easy Layout with table-layout: fixed</title>
+    <style>
+      table {
+        width: 100%;
+        table-layout: fixed; /* This property sets a fixed layout for the table */
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      /* Highlighting the first column for demonstration */
+      th:nth-child(1),
+      td:nth-child(1) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Easy Layout with table-layout: fixed</h2>
+
+    <table>
+      <tr>
+        <th>First Column</th>
+        <th>Second Column</th>
+        <th>Third Column</th>
+      </tr>
+      <tr>
+        <td>Fixed width</td>
+        <td>This column expands to fill the remaining space</td>
+        <td>This column also expands to fill the space</td>
+      </tr>
+    </table>
+  </body>
+</html>
