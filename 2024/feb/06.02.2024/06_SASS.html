@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Specifying &lt;caption&gt; Placement</title>
+    <style>
+      section div {
+        background: blue;
+      }
+      section p {
+        background: blue;
+      }
+
+      /* SASS/SCSS */
+      section {
+        div {
+          background: blue;
+        }
+        p {
+          background: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <div>
+          <div>test</div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <div>
+        <h2>Test</h2>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+      </div>
+    </div>
+    <h2>Specifying &lt;caption&gt; Placement with caption-side</h2>
+
+    <table>
+      <caption>
+        Table Caption: Descriptive Text Here
+      </caption>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+    </table>
+  </body>
+</html>

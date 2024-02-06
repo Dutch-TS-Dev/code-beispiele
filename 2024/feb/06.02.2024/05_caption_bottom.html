@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Specifying &lt;caption&gt; Placement</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      caption {
+        caption-side: bottom; /* Positions the caption at the bottom */
+        padding: 4px;
+        font-style: italic;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Specifying &lt;caption&gt; Placement with caption-side</h2>
+
+    <table>
+      <caption>
+        Table Caption: Descriptive Text Here
+      </caption>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+    </table>
+  </body>
+</html>
