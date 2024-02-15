@@ -1,0 +1,61 @@
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto auto;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "aside-one main main section"
+      "aside-two main main section"
+      "footer footer footer footer";
+    gap: 10px; /* Adjust the gap as necessary */
+  }
+
+  .header {
+    grid-area: header;
+    /* Additional styling */
+  }
+
+  .nav {
+    grid-area: nav;
+    /* Additional styling */
+  }
+
+  .main {
+    grid-area: main;
+    /* Additional styling */
+  }
+
+  .aside-one {
+    grid-area: aside-one;
+    /* Additional styling */
+  }
+
+  .aside-two {
+    grid-area: aside-two;
+    /* Additional styling */
+  }
+
+  .section {
+    grid-area: section;
+    /* Additional styling */
+  }
+
+  .footer {
+    grid-area: footer;
+    /* Additional styling */
+  }
+
+  /* Add your styling here, such as background colors, text alignment, padding, etc. */
+</style>
+
+<div class="grid-container">
+  <header class="header">Header</header>
+  <nav class="nav">About Home Contact</nav>
+  <main class="main">Main</main>
+  <aside class="aside-one">Aside One</aside>
+  <aside class="aside-two">Aside Two</aside>
+  <section class="section">Section</section>
+  <footer class="footer">Footer</footer>
+</div>

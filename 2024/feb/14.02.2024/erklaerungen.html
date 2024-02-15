@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Übergangsanimation</title>
+    <style>
+      .element {
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+
+        /* transition: background-color 2s ease-in 1s; */
+      }
+
+      .element {
+        background-color: green; /* Grüne Farbe */
+      }
+
+      .element:hover {
+        /* Zustand des Elements beim Hovern */
+        transition-property: background-color; /* Eigenschaft, die animiert werden soll */
+        transition-duration: 0.5s; /* Dauer der Animation */
+        transition-timing-function: ease-in-out; /* Geschwindigkeitskurve der Animation */
+        transition-delay: 1s; /* Verzögerung, bevor die Animation startet */
+        background-color: red; /* Rote Farbe */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="element">Hover mich!</div>
+  </body>
+</html>

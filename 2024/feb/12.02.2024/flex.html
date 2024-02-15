@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox-Beispiel</title>
+    <style>
+      .flex-container {
+        display: flex;
+        justify-content: space-around; /* Verteilt die Kinder mit Abstand dazwischen */
+        border: 2px solid #000; /* Ein schwarzer Rahmen um den Flex-Container */
+      }
+
+      .flex-item {
+        width: 100px; /* Feste Breite von 100px für jedes Kind-Element */
+        height: 100px; /* Höhe, damit wir die Boxen sehen können */
+        background-color: #bada55; /* Eine leuchtende Farbe, damit die Boxen auffallen */
+        display: flex;
+        align-items: center; /* Zentriert den Inhalt vertikal */
+        justify-content: center; /* Zentriert den Inhalt horizontal */
+        margin: 10px; /* Etwas Abstand zwischen den Boxen */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+  </body>
+</html>
