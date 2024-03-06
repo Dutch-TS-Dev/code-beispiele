@@ -1,39 +1,27 @@
-<style>
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    border-right: 10px solid red;
-  }
-
-  .box:hover {
-    /* animation-name: moveBox; */
-
-    transform: rotate(80deg);
-
-    /* animation-duration: 2s; */
-    animation-iteration-count: infinite;
-    /* animation-direction: normal; */
-  }
-
-  /* 
-  @keyframes moveBox {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(200px);
-    }
-  } */
-</style>
-
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Animation Beispiel</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>CSS Animation Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-right: 10px solid red;
+        transition: transform 0.3s ease; /* Added transition for smooth effect */
+      }
+
+      .box:hover {
+        transform: rotate(80deg);
+      }
+
+      /* Apply rotation when box has been hovered over */
+      .box:hover ~ .box {
+        transform: rotate(80deg);
+      }
+    </style>
   </head>
   <body>
     <div class="box"></div>
